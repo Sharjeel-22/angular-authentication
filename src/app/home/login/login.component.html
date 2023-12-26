@@ -1,0 +1,43 @@
+<div class="main-wrapper">
+  <div class="form-container">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title"><h1 class="title">Login</h1></div>
+      </div>
+      <div class="card-body">
+        <form class="form">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input
+              type="email"
+              name="username"
+              id="username"
+              placeholder="email"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder=""
+              required
+            />
+            <div class="forgot">
+              <a rel="noopener noreferrer">Forgot Password ?</a>
+            </div>
+          </div>
+          <button class="sign" routerLink="/dashboard">Sign in</button>
+        </form>
+
+        <p class="signup">
+          Don't have an account?
+          <a rel="noopener noreferrer"  class="sign-color" >Sign up</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>

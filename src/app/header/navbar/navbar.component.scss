@@ -1,0 +1,68 @@
+#checkbox {
+  display: none;
+}
+.nav-light {
+  background-color: #fff;
+}
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: .3s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(76, 189, 151);
+  border-radius: 5px;
+  transition-duration: .3s;
+}
+
+#checkbox:checked + .toggle .bars {
+  margin-left: 13px;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: rotate(135deg);
+  margin-left: 0;
+  transform-origin: center;
+  transition-duration: .3s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  transform: rotate(45deg);
+  transition-duration: .3s;
+  transform-origin: left center;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  transform: rotate(-45deg);
+  transition-duration: .3s;
+  transform-origin: left center;
+}
+.mobile-view-menu {
+  display: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 48px;
+  text-decoration: none;
+  color: rgb(5, 118, 188);
+}
+
+
+@media(max-width:1150px) {
+  .mobile-view-menu {
+    display: block;
+  }
+}

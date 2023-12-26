@@ -1,0 +1,48 @@
+<nav ngxNavbarDynamicExpand class="nav-light">
+  <a class="navbar-brand" href="#"><img src="https://cloudtek.biz/img/logo.svg" alt="Cloudtek Logo"></a>
+  <div class="mobile-view-menu">
+    <input type="checkbox" id="checkbox" (click)="collapse.toggle()" aria-controls="main-nav"
+    aria-expanded="false"
+    aria-label="Navigáció kapcsoló">
+          <label for="checkbox" class="toggle">
+              <div class="bars" id="bar1"></div>
+              <div class="bars" id="bar2"></div>
+              <div class="bars" id="bar3"></div>
+          </label>
+  </div>
+
+  <ngx-navbar-collapse id="main-nav" #collapse="ngxNavbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"
+          >Dashboard</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Organization</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Reqcruitment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Employee</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Attendence</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Leave</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">PayRoll</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Reports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Others</a>
+      </li>
+
+    </ul>
+  </ngx-navbar-collapse>
+</nav>
